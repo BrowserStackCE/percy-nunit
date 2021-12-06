@@ -16,7 +16,7 @@ namespace SeleniumPercyIntegration
         [SetUp]
         public void Setup()
         {
-            driver = new ChromeDriver("/Users/mohammed/Downloads");
+            driver = new ChromeDriver("/path/to.your/local/chromedriver");
             _percy = new Percy();
         }
 
