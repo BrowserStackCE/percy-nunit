@@ -29,9 +29,11 @@ namespace SeleniumPercyIntegration
             query.SendKeys("BrowserStack");
             query.Submit();
             Console.WriteLine(driver.Title);
-            //_percy.Snapshot("HomePage", new Dictionary<string, object> { { "widths", new List<int> { 768, 992, 1200 } } });
-            // _percy.Snapshot(driver, "Home Page", null);
-            _percy.Snapshot(driver,"a", new Dictionary<string, object> { { "widths", new List<int> { 768, 992, 1200 } } });  
+
+            // Taking snaphot through Percy
+            _percy.Snapshot("HomePage", new Dictionary<string, object> { { "widths", new List<int> { 768, 992, 1200 } } });
+            
+            // Teardown
             driver.Quit();
           
         }
