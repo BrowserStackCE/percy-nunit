@@ -44,3 +44,4 @@ $ choco install chromedriver
 2. Running the Test
     - For running Nunit based test we need to first start the percy server using 
    ```percy exec:start``` You can get more details [here](https://docs.percy.io/docs/cli-exec#percy-execstart)
+   - Now,run the test, on successfull execution you can view the results on percy [dashboard](https://percy.io/recent-project)
